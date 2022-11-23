@@ -1,3 +1,5 @@
+const env = import.meta.env;
+
 const MENUS = {
     location: "#location",
     restaurant: "#restaurant",
@@ -6,6 +8,9 @@ const MENUS = {
     gallery: "#gallery",
 }
 
+const MAP_BOX_TOKEN = env.VITE_MAP_BOX_TOKEN
+
 export {
-    MENUS
+    MENUS,
+    MAP_BOX_TOKEN
 }

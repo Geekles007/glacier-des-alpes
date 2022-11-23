@@ -2,6 +2,8 @@ import React, {memo} from "react";
 import {useTranslation} from "react-i18next";
 import {ArrowDown} from "lucide-react";
 import TitleBanner from "../../components/title-banner";
+import MenuList from "../../components/menu-list";
+import MapBox from "../../components/mapbox";
 
 type HomeProps = {}
 
@@ -38,8 +40,24 @@ const Home = ({}: HomeProps) => {
                     ut vel vero?</p>
             </div>
         </section>
-        <section className="p-8">
+        <section id={"Restaurant"} className="p-8">
             <TitleBanner image={"https://seeafricatoday.com/wp-content/uploads/2019/07/food34.jpg"} title={t("restaurantText")} />
+            <MenuList />
+        </section>
+        <section id={"Drinks"} className="p-8">
+            <TitleBanner image={"https://seeafricatoday.com/wp-content/uploads/2019/07/food34.jpg"} title={t("drinksText")} />
+            <MenuList />
+        </section>
+        <section id={"Dessert"} className="p-8">
+            <TitleBanner image={"https://seeafricatoday.com/wp-content/uploads/2019/07/food34.jpg"} title={t("dessertText")} />
+            <MenuList />
+        </section>
+        <section id={"Gallery"} className="p-8">
+            <TitleBanner image={"https://seeafricatoday.com/wp-content/uploads/2019/07/food34.jpg"} title={t("galleryText")} />
+            <MenuList />
+        </section>
+        <section className="h-[500px] mt-48 relative">
+            <MapBox />
         </section>
     </div>
 
