@@ -1,0 +1,39 @@
+{
+  "name": "alpes-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "i18next": "^19.9.1",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-http-backend": "^1.1.1",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.102.0",
+    "react": "^18.2.0",
+    "react-currency-format": "^1.1.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^11.11.4",
+    "react-icons": "^4.6.0",
+    "react-router-dom": "^6.4.3",
+    "react-select": "^5.6.0",
+    "react-spinners": "^0.13.6",
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.188",
+    "@types/react": "^18.0.24",
+    "@types/react-currency-format": "^1.0.0",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.2",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
+  }
+}
