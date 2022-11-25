@@ -7,7 +7,7 @@ const ListItem = ({}: ListItemProps) => {
 
     return <div className={"flex font-heading"}>
         <div className="w-24 flex items-center justify-center border">{money.toLocaleString('en-US', {maximumFractionDigits:2})} XAF</div>
-        <div className="flex-1 p-8 border">Beef∙Chipotle-Beer-Beef + Smokey Peppers</div>
+        <div className="flex-1 sm:p-8 p-4 border">Beef∙Chipotle-Beer-Beef + Smokey Peppers</div>
     </div>
 
 }
