@@ -23,7 +23,7 @@ const Home = ({}: HomeProps) => {
             </div>
             <a href={"#about"} className="absolute right-0 bottom-0 h-40 sm:h-56 w-56 sm:w-72 bg-white z-30">
                 <ArrowDown className={"absolute left-4 top-4 animate-scrolling"} size={24}/>
-                <span className={"font-heading absolute left-4 bottom-4"}>Scroll</span>
+                <span className={"font-heading absolute left-4 bottom-4"}>{t("scrollText")}</span>
             </a>
         </section>
         <section id={"about"} className="p-2 sm:p-8 mt-24 mb-12">

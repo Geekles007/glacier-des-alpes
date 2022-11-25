@@ -8,7 +8,7 @@ const MapBox = ({}: MapBoxProps) => {
 
     const [lng, setLng] = useState(4.0659983282091);
     const [lat, setLat] = useState(9.736586672708617);
-    const [zoom, setZoom] = useState(6);
+    const [zoom, setZoom] = useState(8);
 
     const [viewport, setViewport] = React.useState({
         longitude: lng,
