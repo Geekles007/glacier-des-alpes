@@ -25,7 +25,7 @@ const Drawer = ({}: DrawerProps) => {
         switchValue(false);
     })
 
-    return <div ref={ref} className={`drawer w-80 transition-all duration-500 h-screen bg-primary-700 font-heading p-5 flex flex-col items-center absolute lg:sticky lg:translate-x-0 -translate-x-full overflow-y-scroll ${opened && "translate-x-0 z-40"}`}>
+    return <div ref={ref} className={`drawer w-80 transition-all duration-500 h-screen bg-primary-700 font-heading p-5 flex flex-col items-center absolute lg:sticky lg:translate-x-0 -translate-x-full overflow-y-scroll  z-40 ${opened && "translate-x-0"}`}>
         <div className="flex flex-col w-full">
             {
                 links.map((item, index) => (
