@@ -10,7 +10,7 @@ const Layout = ({}: LayoutProps) => {
     return <div className={"flex w-screen"}>
         <Drawer />
         <div className="flex-1">
-            <div className="h-screen w-full overflow-y-scroll">
+            <div className="h-screen w-full overflow-y-scroll  scroll-smooth">
                 <Outlet />
             </div>
         </div>

@@ -21,10 +21,10 @@ const Home = ({}: HomeProps) => {
                     {t("welcomeMessageText")}
                 </div>
             </div>
-            <div className="absolute right-0 bottom-0 h-40 sm:h-56 w-56 sm:w-72 bg-white z-30">
+            <a href={"#about"} className="absolute right-0 bottom-0 h-40 sm:h-56 w-56 sm:w-72 bg-white z-30">
                 <ArrowDown className={"absolute left-4 top-4 animate-scrolling"} size={24}/>
                 <span className={"font-heading absolute left-4 bottom-4"}>Scroll</span>
-            </div>
+            </a>
         </section>
         <section id={"about"} className="p-2 sm:p-8 mt-24 mb-12">
             <div className={"p-2 sm:p-8 font-main text-lg sm:text-2xl text-slate-500"}>
@@ -40,23 +40,23 @@ const Home = ({}: HomeProps) => {
                     ut vel vero?</p>
             </div>
         </section>
-        <section id={"Restaurant"} className="p-2 sm:p-8 mt-8 sm:mt-0">
+        <section id={"restaurant"} className="p-2 sm:p-8 mt-8 sm:mt-0">
             <TitleBanner image={"https://seeafricatoday.com/wp-content/uploads/2019/07/food34.jpg"} title={t("restaurantText")} />
             <MenuList />
         </section>
-        <section id={"Drinks"} className="p-2 sm:p-8 mt-8 sm:mt-0">
+        <section id={"drinks"} className="p-2 sm:p-8 mt-8 sm:mt-0">
             <TitleBanner image={"https://seeafricatoday.com/wp-content/uploads/2019/07/food34.jpg"} title={t("drinksText")} />
             <MenuList />
         </section>
-        <section id={"Dessert"} className="p-2 sm:p-8 mt-8 sm:mt-0">
+        <section id={"dessert"} className="p-2 sm:p-8 mt-8 sm:mt-0">
             <TitleBanner image={"https://seeafricatoday.com/wp-content/uploads/2019/07/food34.jpg"} title={t("dessertText")} />
             <MenuList />
         </section>
-        <section id={"Gallery"} className="p-2 sm:p-8 mt-8 sm:mt-0">
+        <section id={"gallery"} className="p-2 sm:p-8 mt-8 sm:mt-0">
             <TitleBanner image={"https://seeafricatoday.com/wp-content/uploads/2019/07/food34.jpg"} title={t("galleryText")} />
             <MenuList />
         </section>
-        <section className="h-[500px] mt-24 relative">
+        <section id={"location"} className="h-[500px] mt-24 relative">
             <MapBox />
         </section>
     </div>
