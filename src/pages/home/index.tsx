@@ -11,7 +11,7 @@ const Home = ({}: HomeProps) => {
     const {t} = useTranslation("translation", {useSuspense: false});
 
     return <div className={""}>
-        <section className="h-screen relative">
+        <section className="banner relative">
             <img className={"h-full w-full object-cover z-10"}
                  src="https://images.unsplash.com/photo-1592861956120-e524fc739696?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                  alt="welcome"/>
