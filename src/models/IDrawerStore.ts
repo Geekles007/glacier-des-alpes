@@ -1,4 +1,4 @@
 export interface IDrawerStore {
     opened: boolean;
-    switchValue: () => void;
+    switchValue: (value: boolean) => void;
 }

@@ -1,9 +1,10 @@
-import React, {memo} from "react";
+import React, {createRef, memo} from "react";
 import LayoutController from "./controller";
 import {useTranslation} from "react-i18next";
 import {MENUS} from "../constants";
 import LangSwitcher from "../components/lang-switcher";
 import {useDrawer} from "../stores/DrawerStore";
+import useOutsideClick from "../hooks/useOutsideClick";
 
 type DrawerProps = {}
 
@@ -17,9 +18,14 @@ const styles = {
 const Drawer = ({}: DrawerProps) => {
     const {links} = LayoutController;
     const {t} = useTranslation("translation", {useSuspense: false});
-    const {opened} = useDrawer(state => state);
+    const {opened, switchValue} = useDrawer(state => state);
+    const ref = createRef<HTMLDivElement>();
 
-    return <div className={`drawer w-80 transition-all duration-500 h-screen bg-primary-700 font-heading p-5 flex flex-col items-center absolute lg:sticky lg:translate-x-0 -translate-x-full overflow-y-scroll ${opened && "translate-x-0 z-40"}`}>
+    useOutsideClick(ref, () => {
+        switchValue(false);
+    })
+
+    return <div ref={ref} className={`drawer w-80 transition-all duration-500 h-screen bg-primary-700 font-heading p-5 flex flex-col items-center absolute lg:sticky lg:translate-x-0 -translate-x-full overflow-y-scroll ${opened && "translate-x-0 z-40"}`}>
         <div className="flex flex-col w-full">
             {
                 links.map((item, index) => (

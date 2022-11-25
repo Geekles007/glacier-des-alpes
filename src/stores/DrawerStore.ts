@@ -3,5 +3,5 @@ import {IDrawerStore} from "../models/IDrawerStore";
 
 export const useDrawer = create<IDrawerStore>((set) => ({
     opened: false,
-    switchValue: () => set((state) => ({ opened: !state.opened })),
+    switchValue: (value: boolean) => set((state) => ({ opened: value })),
 }))
