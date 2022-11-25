@@ -16,18 +16,18 @@ const Home = ({}: HomeProps) => {
                  src="https://images.unsplash.com/photo-1592861956120-e524fc739696?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                  alt="welcome"/>
             <div
-                className="z-20 absolute inset-0 bg-primary-600/30 font-sans text-8xl text-yellow-400 flex items-center justify-center">
+                className="z-20 absolute inset-0 bg-primary-600/30 font-sans text-6xl sm:text-8xl text-yellow-400 flex items-center justify-center">
                 <div className="max-w-3xl text-center">
                     {t("welcomeMessageText")}
                 </div>
             </div>
-            <div className="absolute right-0 bottom-0 h-56 w-72 bg-white z-30">
+            <div className="absolute right-0 bottom-0 h-40 sm:h-56 w-56 sm:w-72 bg-white z-30">
                 <ArrowDown className={"absolute left-4 top-4 animate-scrolling"} size={24}/>
                 <span className={"font-heading absolute left-4 bottom-4"}>Scroll</span>
             </div>
         </section>
-        <section id={"about"} className="p-8 mt-24 mb-12">
-            <div className={"p-8 font-main text-2xl text-slate-500"}>
+        <section id={"about"} className="p-2 sm:p-8 mt-24 mb-12">
+            <div className={"p-2 sm:p-8 font-main text-lg sm:text-2xl text-slate-500"}>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea in, quia! Architecto asperiores,
                     aspernatur.</p>
                 <br/>
@@ -40,23 +40,23 @@ const Home = ({}: HomeProps) => {
                     ut vel vero?</p>
             </div>
         </section>
-        <section id={"Restaurant"} className="p-8">
+        <section id={"Restaurant"} className="p-2 sm:p-8 mt-8 sm:mt-0">
             <TitleBanner image={"https://seeafricatoday.com/wp-content/uploads/2019/07/food34.jpg"} title={t("restaurantText")} />
             <MenuList />
         </section>
-        <section id={"Drinks"} className="p-8">
+        <section id={"Drinks"} className="p-2 sm:p-8 mt-8 sm:mt-0">
             <TitleBanner image={"https://seeafricatoday.com/wp-content/uploads/2019/07/food34.jpg"} title={t("drinksText")} />
             <MenuList />
         </section>
-        <section id={"Dessert"} className="p-8">
+        <section id={"Dessert"} className="p-2 sm:p-8 mt-8 sm:mt-0">
             <TitleBanner image={"https://seeafricatoday.com/wp-content/uploads/2019/07/food34.jpg"} title={t("dessertText")} />
             <MenuList />
         </section>
-        <section id={"Gallery"} className="p-8">
+        <section id={"Gallery"} className="p-2 sm:p-8 mt-8 sm:mt-0">
             <TitleBanner image={"https://seeafricatoday.com/wp-content/uploads/2019/07/food34.jpg"} title={t("galleryText")} />
             <MenuList />
         </section>
-        <section className="h-[500px] mt-48 relative">
+        <section className="h-[500px] mt-24 relative">
             <MapBox />
         </section>
     </div>
